@@ -736,12 +736,12 @@
     }
 
     onFocus();
-    // if (searchWhenFocus && !opened) {
-    //   if (debug) {
-    //     console.log("processInput when focus")
-    //   }
-    //   processInput()
-    // }
+    if (searchWhenFocus && !opened) {
+      if (debug) {
+        console.log("processInput when focus")
+      }
+      processInput()
+    }
 
     resetListToAllItemsAndOpen();
   }
