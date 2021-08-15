@@ -347,6 +347,7 @@
 
     const textFiltered = prepareUserEnteredText(text);
 
+    /*
     if (textFiltered === "") {
       if (searchFunction) {
         // we will need to rerun the search
@@ -368,6 +369,7 @@
       }
       return;
     }
+    */
 
     if (!searchFunction) {
       processListItems(textFiltered);
@@ -734,9 +736,12 @@
     }
 
     onFocus();
-    if (searchWhenFocus) {
-      processInput()
-    }
+    // if (searchWhenFocus && !opened) {
+    //   if (debug) {
+    //     console.log("processInput when focus")
+    //   }
+    //   processInput()
+    // }
 
     resetListToAllItemsAndOpen();
   }
