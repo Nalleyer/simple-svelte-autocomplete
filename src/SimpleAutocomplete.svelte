@@ -440,7 +440,7 @@
 
   function defaultItemFilterFunction(listItem, searchWords){
     var matches = numberOfMatches(listItem, searchWords);
-    if (matchAllKeywords) {
+    if (matchAllKeywords && searchWords) {
       return matches >= searchWords.length;
     } else {
       return matches > 0;
