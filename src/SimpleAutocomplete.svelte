@@ -325,6 +325,10 @@
       return 0;
     }
 
+    if (!searchWords) {
+      return 0;
+    }
+
     const itemKeywords = listItem.keywords;
 
     let matches = 0;
