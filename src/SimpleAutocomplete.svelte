@@ -62,6 +62,7 @@
   export let maxItemsToShowInList = 0;
   export let multiple = false;
   export let create = false;
+  export let searchWhenFocus = true;
 
   // ignores the accents when matching items
   export let ignoreAccents = true;
@@ -733,6 +734,9 @@
     }
 
     onFocus();
+    if (searchWhenFocus) {
+      processInput()
+    }
 
     resetListToAllItemsAndOpen();
   }
